@@ -1,0 +1,42 @@
+Python Code for Mega Millions
+
+import random
+
+number1 = random.randint(1, 70)
+number2 = random.randint(1, 70)
+number3 = random.randint(1, 70)
+number4 = random.randint(1, 70)
+number5 = random.randint(1, 70)
+number6 = random.randint(1, 25)
+
+print("Welcome to Mega Millions! Please enter your lucky numbers! Good luck!")
+pick1 = int(input("First Number: "))
+pick2 = int(input("Second Number: "))
+pick3 = int(input("Third Number: "))
+pick4 = int(input("Fourth Number: "))
+pick5 = int(input("Fifth Number: "))
+pick6 = int(input("Sixth Number: "))
+
+print(f"Your drawing numbers are: {pick1}, {pick2}, {pick3}, {pick4}, {pick5}, and {pick6}")
+print(f"Today's Mega Millions winning numbers are: {number1}, {number2}, {number3}, {number4}, {number5}, and {number6}")
+
+if (pick1 != number1) and (pick2 != number2) and (pick3 != number3) and (pick4 != number4) and (pick5 != number5) and (pick6 == number6):
+    print("Congratulations! You won $2!")
+elif (pick1 == number1) or (pick2 == number2) or (pick3 == number3) or (pick4 == number4) or (pick5 == number5) and (pick6 == number6):
+    print("Congratulations! You won $4!")
+elif (pick1 == number1 and pick2 == number2) or (pick1 == number1 and pick3 == number3) or (pick1 == number1 and pick4 == number4) or (pick1 == number1 and pick5 == number5) or (pick2 == number2 and pick3 == number3) or (pick2 == number2 and pick4 == number4) or (pick2 == number2 and pick5 == number5) or (pick3 == number3 and pick4 == number4) or (pick3 == number3 and pick5 == number5) or (pick4 == number4 and pick5 == number5) and (pick6 == number6):
+    print("Congratulations! you won $10!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3) or (pick1 == number1 and pick3 == number3 and pick4 == number4) or (pick1 == number1 and pick4 == number4 and pick5 == number5) or (pick2 == number2 and pick3 == number3 and pick4 == number4) or (pick3 == number3 and pick4 == number4 and pick5 == number5) and (pick6 != number6):
+    print("Congratulations! You won $10!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3) or (pick1 == number1 and pick3 == number3 and pick4 == number4) or (pick1 == number1 and pick4 == number4 and pick5 == number5) or (pick2 == number2 and pick3 == number3 and pick4 == number4) or (pick3 == number3 and pick4 == number4 and pick5 == number5) and (pick6 == number6):
+    print("Congratulations! You won $200!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3 and pick4 == number4) or (pick1 == number1 and pick3 == number3 and pick4 == number4 and pick5 == number5) or (pick2 == number2 and pick3 == number3 and pick4 == number4 and pick5 == number5) and (pick6 != number6):
+    print("Congratulations! You won $500!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3 and pick4 == number4) or (pick1 == number1 and pick3 == number3 and pick4 == number4 and pick5 == number5) or (pick2 == number2 and pick3 == number3 and pick4 == number4 and pick5 == number5) and (pick6 == number6):
+    print("Congratulations! You won $10,000!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3 and pick4 == number4 and pick5 == number5) and (pick6 != number6):
+    print("Congratulations! You won $1,000,000!")
+elif (pick1 == number1 and pick2 == number2 and pick3 == number3 and pick4 == number4 and pick5 == number5 and pick6 == number6):
+    print("Congratulations!!! You won the Jackpot!!!")
+else:
+    print("Sorry, you are not a winner.")
