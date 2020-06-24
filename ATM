@@ -1,3 +1,4 @@
+# Code for ATM
 print("Welcome to Jeff's Bank!")
 code = int(input("Please enter your 4-digit PIN number: "))
 pin = 1993
