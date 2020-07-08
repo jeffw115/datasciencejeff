@@ -30,7 +30,7 @@ if code == pin and attempts == 1:
     # If transaction is withdraw
     elif transaction == "withdraw":
         amount = float(input("Please enter an amount: $"))
-        
+         
         if amount > original_balance:
             print("Sorry, your current balance is less than the amount requested.")
         elif amount <= 0:
