@@ -1,2 +1,2 @@
-# jeff115
-Sample programming works and projects
+# Jeff Wong
+Data Science projects portfolio
